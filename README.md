@@ -100,3 +100,9 @@ sections below)
 ```shell script
 gpg --full-generate-key
 ```
+![gpg-create](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/gpg-1.png)
+![gpg-create-2](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/gpg-2.png)
+
+#### Checking the GPG Key
+You can then see that the private key and public key are both tied to each other by that ID shown under pub by using the **–list-secret-keys** and **–list-public-keys** commands respectively:
+

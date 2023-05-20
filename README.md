@@ -105,4 +105,29 @@ gpg --full-generate-key
 
 #### Checking the GPG Key
 You can then see that the private key and public key are both tied to each other by that ID shown under pub by using the **–list-secret-keys** and **–list-public-keys** commands respectively:
+![gpg-create-3](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/ist_gpg.png)
 
+#### Sending and receiving GPG Keys
+
+To send someone a GPG key, you’ll first need to export it from your keychain, which is what contains all of your public and private keys.
+
+To export a key, simply find the key ID in your keychain, and then run the following command, replacing id with the key’s ID and key.gpg with the name of the file you want to save to:
+```shell script
+gpg --output key.gpg --export id
+```
+![send](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/gpg-send-1.png)
+
+To import a key, simply give the output file **(from the previous command)** to the other user and then have them run the following command:
+```shell script
+gpg --import key.gpg
+```
+![import](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/Screenshot%20from%202023-05-18%2021-13-35.png)
+
+To use the key normally though, you’ll need to verify the key so GPG properly trusts it.
+
+This can be done by running the **–edit-key** command on the other user’s system, following by signing the key:
+
+```shell script
+gpg --edit-key id
+```
+![import](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/Screenshot%20from%202023-05-18%2021-14-48.png)

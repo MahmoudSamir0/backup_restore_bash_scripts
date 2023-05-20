@@ -131,3 +131,12 @@ This can be done by running the **–edit-key** command on the other user’s sy
 gpg --edit-key id
 ```
 ![import](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/Screenshot%20from%202023-05-18%2021-14-48.png)
+
+
+Next, run the **fpr** command, which will show the fingerprint for the key. The output of this command should be validated against the output on your own machine, which can be found by running the same **–edit-key** command on your system:
+![fbr](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/fbr.png)
+
+If everything matches up, just run the **sign** command and everything will be ready to go:
+![sign](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/sign.png)
+
+The other user can now start encrypting files with your public key just as you did earlier, ensuring they’ll only be readable by you when you decrypt them with your private key.

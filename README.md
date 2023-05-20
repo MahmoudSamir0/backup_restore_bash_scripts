@@ -140,3 +140,4 @@ If everything matches up, just run the **sign** command and everything will be r
 ![sign](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/sign.png)
 
 The other user can now start encrypting files with your public key just as you did earlier, ensuring they’ll only be readable by you when you decrypt them with your private key.
+### working with the script

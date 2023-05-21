@@ -175,5 +175,19 @@ enter the path of **private key** and **dns of ec2**
 ##### done the file uploaded to ec2 server
 
 #### 2)restore
+![restore-1](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/restore-1.png)
+enter name for temp directory
+![restore-2](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/restore-2.png)
   
   
+now enter the encrypted file ,then enter y if you have the encryption key  **you must have encryption key of the
+file.**
+  
+  
+![restore-3](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/restore-3.png)
+  
+  
+enter the passphrase to decrypt the file
+  
+![restore-4](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/restore-4.png)
+# our directory is ready

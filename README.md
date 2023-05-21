@@ -141,3 +141,14 @@ If everything matches up, just run the **sign** command and everything will be r
 
 The other user can now start encrypting files with your public key just as you did earlier, ensuring they’ll only be readable by you when you decrypt them with your private key.
 ### working with the script
+to use These scripts You must ensure that the scripts executable script
+Make the script executable with command **chmod +x <fileName>.**
+```shell script
+sudo chmod +x backup.sh
+  ```
+ now Run the script  
+  
+```shell script
+./backup.sh
+```
+  

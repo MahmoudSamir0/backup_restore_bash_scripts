@@ -143,6 +143,7 @@ The other user can now start encrypting files with your public key just as you d
 ### working with the script
 to use These scripts You must ensure that the scripts executable script
 Make the script executable with command **chmod +x <fileName>.**
+#### 1) backup
 ```shell script
 sudo chmod +x backup.sh
   ```
@@ -151,4 +152,28 @@ sudo chmod +x backup.sh
 ```shell script
 ./backup.sh
 ```
+![backup-1](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/backup-1.png)
+  
+enter the directory you want to back up i choose **ITI** for example
+![backup-2](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/backup-2.png)
+  
+if found it ,this message will appear ,enter y if you want to create the
+key ,n if you have one,then enter number of day
+![backup-3](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/backup-3.png)
+![backup-4](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/backup-4-enc.png)
+  enter **user id ** of the key
+![backup-5](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/backup-4-enc-2.png)
+encryption done for **subdirectories**, enter **user id** again to encrypt main
+directory
+![backup-6](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/encript_dir.png)
+ encryption **done** for the directory
+ now let us upload the file to ec2 server
+![backup-7](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/remote.png)
+enter the path of **private key** and **dns of ec2**
+![backup-7](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/Screenshot%20from%202023-05-18%2000-33-58.png)
+ ![backup-7](https://github.com/MahmoudSamir0/backup_restore_bash_scripts/blob/master/screenshot/Screenshot%20from%202023-05-18%2001-11-57.png)
+##### done the file uploaded to ec2 server
+
+#### 2)restore
+  
   

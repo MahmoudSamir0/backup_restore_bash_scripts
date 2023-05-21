@@ -1,3 +1,7 @@
+<h1 align="center"> Bash Project </h1>
+
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
 # backup_restore_bash_scripts
 ## goal
 The goal of These scripts that perform secure encrypted backup and restore functionality,that backup the content of a specific directory, towards a remote server **AWS EC2**, this script only copies new files and files that were modified for **number** of days,able to schedule running the backup script on predefined times
